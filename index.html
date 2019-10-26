@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Gökhan Karakuş">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>I'm Goutham | My Profile Card</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    
+    <div class="vertical-center flipIn">
+        <div class="container-fluid">
+       
+            <nav class="hidden">
+                <ul>
+                    <li><a href="javascript:void(0);" onclick="toggleNav(1);">X</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul>
+                    <li><a href="https://goo.gl/KQVpPf" target="_blank"><i class="fa fa-download"></i> RESUME</a></li>
+                    <li><a href="back.html"><i class="fa fa-exchange"></i> BACK</a></li>
+                    <li><a href="javascript:void(0);" onclick="toggleNav(0);"><i class="fa fa-navicon"></i> MENU</a></li>
+                </ul>
+            </nav><!-- nav -->
+
+            <section class="card card_color--white">
+                <div class="row">
+                    <div class="card-img col-md-4">
+                        <img src="https://lh3.googleusercontent.com/1nJzf7HX0hU91pyTcEZ7CWyab5dN8oIQ6bzx-gdoG7d7f7SvJJQ48Dls5MoNEzr4-xNxMDYIh0jddor9CSf4G3AFOIlyG5ygm2tQmdz0taIEMKbEs6tyI4APPREBWqxnZEdOLKEucH2dKEMSBaEcWGI-o227Myj8-ygrh7eBOWcBzo_iVwFmiHY8o75M--yV4WdO1RDloRCKsF_bOzE9xFfPsyKSBrFK9RDlFctiYMdynYTP2nkIveY0r2-WRKQekbAxnCX_gFX26nfgm5uQYRGQraswPRzNB7Lxh-eSZpxJd3PT0Clgp40xfS6nbOSeEWDSKOaavlxDZXzP61h21J9KLUrO31Nae_ZWSw47vQrr5obaRL0Pr6vPBOPtNWsGrvDnESYT0dnV-NqeAfcCsklS-0LufGoIo7p1pgvgTMYd-xM2i3rkeqKjm_Ibm7sFZfac3umioyEvuAH4r-B3wu1b6C23SLpGroK-aj7-KDBMGEVo3G46c5YIElGRH4KuCLUoiQK8-uTamQ9SAbSLi-AAN3wMkokkwf5YP0hEwruBaUN5TVwiqliuXTiZyIeVFbCdvONWH4U6EUnalbEzGRhOvynyMzmq9VbbETFkm6AOPZCfu3trP4QodfU8nvkQq6_axMv7-v72g2TgpFoF8ZYLks4RUv-6a-4Dozk07qIElrgC8HtNI5EI=w1244-h1674-no" alt="Avatar" class="img-fluid">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-title">
+                            <h2>Hi! <strong>I'm Goutham</strong></h2>
+                            <small>Spark-Scala Developer</small>
+                        </div>
+
+                        <div class="card-detail">
+                            <div class="contact-info row">
+                                <span class="col-md-4"><strong>PHONE</strong></span>
+                                <span class="col-md-8"><a href="tel:7013009925">+91 7013009925</a></span>
+                                <span class="col-md-4"><strong>E-MAIL</strong></span>
+                                <span class="col-md-8"><a href="mailto:gouthamsneham@gmail.com">gouthamsneham@gmail.com</a></span>
+                                <span class="col-md-4"><strong>WEBSITE</strong></span>
+                                <span class="col-md-8"><a href="http://www.gouthamsneham.com" target="_blank">example.com</a></span>
+                                <span class="col-md-4"><strong>ADDRESS</strong></span>
+                                <span class="col-md-8">Tirupati, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- section: front -->
+
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        function toggleNav(a) {
+            var elems = document.getElementsByTagName('nav');
+            for (var i = 0; i<elems.length; i++) {
+                elems[i].style.display = 'none';
+
+                if (i == a)
+                    elems[i].style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
